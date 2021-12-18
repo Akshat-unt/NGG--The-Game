@@ -8,13 +8,13 @@ while True:
         score = initial_score+1
         initial_score = score
         print(initial_score)
-        if initial_score == 10:
-            print("you're all set!")
-            print("Your score is: ", initial_score)
         if initial_score == -3:
             print("You need more practice. Better luck next time!")
             print("Your score is: ", initial_score)
             break
+        elif initial_score == 10:
+            print("you're all set!")
+            print("Your score is: ", initial_score)
     if number != guess:
         print("Incorrect guess")
         score = initial_score-1
